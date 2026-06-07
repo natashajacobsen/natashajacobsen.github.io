@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog — Natasha Jacobsen. Insights on life sciences commercial strategy, flow cytometry, and the intersection of science and selling." />
+  <title>Blog | Natasha Jacobsen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/blog.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="../index.html">NJ</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#highlights">Highlights</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../blog/" class="active">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn--outline btn--sm nav__resume" href="../resume/NatashaJacobsen_Resume.docx" download>Download Resume</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ BLOG HERO ═══════════════════════ -->
+  <section class="blog-listing-hero">
+    <div class="container">
+      <div class="blog-listing-hero__inner reveal">
+        <div class="section__label">Insights &amp; Perspectives</div>
+        <h1 class="blog-listing-hero__title">From the Field</h1>
+        <p class="blog-listing-hero__subtitle">
+          Thoughts on life sciences commercial strategy, flow cytometry, and the intersection of science and selling.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FILTERS ═══════════════════════ -->
+  <section class="blog-filters">
+    <div class="container">
+      <div class="blog-filters__inner reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="AI & Technology">AI &amp; Technology</button>
+        <button class="filter-btn" data-filter="Commercial Strategy">Commercial Strategy</button>
+        <button class="filter-btn" data-filter="Flow Cytometry">Flow Cytometry</button>
+        <button class="filter-btn" data-filter="Leadership">Leadership</button>
+        <button class="filter-btn" data-filter="Career">Career</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ARTICLES ═══════════════════════ -->
+  <section class="section blog-listing">
+    <div class="container">
+
+      <!-- ── Featured (first/latest) ── -->
+      <div class="blog-featured reveal" data-category="AI & Technology">
+        <a href="ai-agents-flow-cytometry-sales.html" class="blog-featured__link">
+          <div class="blog-featured__content">
+            <div class="blog-featured__meta">
+              <span class="blog-card__tag">AI &amp; Technology</span>
+              <span class="blog-featured__date">June 2026</span>
+            </div>
+            <h2 class="blog-featured__title">The AI-Powered Sales Rep: Building an Intelligent Agent Ecosystem for Life Sciences Instrumentation Sales</h2>
+            <p class="blog-featured__excerpt">
+              A practical whitepaper on how autonomous AI agents can automate grant intelligence, publication monitoring, prospecting, and daily sales execution — freeing you to do the work only you can do. How I think about building a four-agent system that works around the clock for a flow cytometry sales specialist.
+            </p>
+            <span class="blog-card__read-more">Read Whitepaper &rarr;</span>
+          </div>
+          <div class="blog-featured__badge">New</div>
+        </a>
+      </div>
+
+      <!-- ── Article Grid ── -->
+      <div class="blog-listing__grid" id="articleGrid">
+
+        <a class="blog-card blog-card--link reveal" href="what-7-years-bench-taught-me.html" data-category="Commercial Strategy">
+          <div class="blog-card__tag">Commercial Strategy</div>
+          <h3 class="blog-card__title">What 7 Years at the Bench Taught Me About Selling Capital Equipment</h3>
+          <p class="blog-card__excerpt">The unfair advantage that science-trained commercial leaders have — and how to use it without losing your commercial edge in the room.</p>
+          <div class="blog-card__footer">
+            <span class="blog-card__read-more">Read Article &rarr;</span>
+          </div>
+        </a>
+
+        <a class="blog-card blog-card--link reveal" href="platform-shifts-flow-cytometry-2026.html" data-category="Flow Cytometry">
+          <div class="blog-card__tag">Flow Cytometry</div>
+          <h3 class="blog-card__title">The Platform Shifts Reshaping Flow Cytometry in 2026</h3>
+          <p class="blog-card__excerpt">Spectral vs. conventional, high-parameter panels, and what the next generation of instruments means for research infrastructure decisions.</p>
+          <div class="blog-card__footer">
+            <span class="blog-card__status">Coming Soon</span>
+          </div>
+        </a>
+
+        <a class="blog-card blog-card--link reveal" href="how-i-built-22m-regional-ecosystem.html" data-category="Leadership">
+          <div class="blog-card__tag">Leadership</div>
+          <h3 class="blog-card__title">How I Built a $22M Regional Ecosystem — And What I Learned</h3>
+          <p class="blog-card__excerpt">The strategy behind orchestrating capital, reagents, service, and applications into a coordinated, high-performing commercial engine.</p>
+          <div class="blog-card__footer">
+            <span class="blog-card__status">Coming Soon</span>
+          </div>
+        </a>
+
+        <!-- ─────────────────────────────────────────────────
+          ADD NEW ARTICLES BELOW THIS LINE.
+          Copy one <a class="blog-card ..."> block, paste it here,
+          update: href, data-category, tag, title, excerpt, date.
+          The filter system and grid will handle the rest automatically.
+        ───────────────────────────────────────────────────── -->
+
+      </div>
+
+      <!-- ── Empty state (shown when filter returns nothing) ── -->
+      <div class="blog-empty" id="blogEmpty" style="display:none;">
+        <p>No articles in this category yet — check back soon.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="footer__name">Natasha Jacobsen</span>
+        <span class="footer__tagline">Life Sciences Commercial Leader &middot; San Diego, CA</span>
+      </div>
+      <div class="footer__links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../resume/NatashaJacobsen_Resume.docx" download>Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Exclude Word resume — only the PDF goes public
+resume/*.docx
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
