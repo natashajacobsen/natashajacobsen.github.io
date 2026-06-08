@@ -297,7 +297,7 @@ a:hover { color: var(--text-primary); }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: calc(var(--nav-height) + 60px) 0 100px;
+  padding: calc(var(--nav-height) + 60px) 0 140px;
   overflow: hidden;
 }
 .hero__bg {
@@ -414,7 +414,7 @@ a:hover { color: var(--text-primary); }
 /* ── Scroll hint ── */
 .hero__scroll-hint {
   position: absolute;
-  bottom: 40px;
+  bottom: 48px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -920,6 +920,7 @@ a:hover { color: var(--text-primary); }
   .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
   .blog__grid         { grid-template-columns: repeat(2, 1fr); }
   .hero__metrics      { grid-template-columns: repeat(2, 1fr); }
+  .hero__scroll-hint  { display: none; }
   .about__grid        { grid-template-columns: 200px 1fr; gap: 3rem; }
 }
 
